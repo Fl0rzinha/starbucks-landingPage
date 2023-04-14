@@ -25,11 +25,21 @@ header {
     margin-left: 80px;
     margin-right: 80px;
     align-items: center;
-    margin-top: 5px;
+}
+
+main {
+    height: 100vh;
 }
 
 header a img {
     width: 80px;
+    filter: invert(0.1);
+    margin-top: 5px;
+}
+
+header ul li a {
+    font-size: 18px;
+    font-weight: 400px;
 }
 
 .links {
@@ -39,27 +49,61 @@ header a img {
     list-style-type: none;
     gap: 35px;
     font-family: 'Poppins', sans-serif;
+    color: var(--corSecundaria);
+}
+
+.links li a:hover {
+    text-decoration: underline;
 }
 
 .conteudo {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-left: 80px;
-    
+    margin-right: 5px;
+    align-items: center;
 }
 
 .textoprincipal{
     width: 600px;
+}
+.textoprincipal h2 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: 500;
 }
 
 .textoprincipal h2 span {
     color: var(--corPrimaria);
 }
 
-.sorveteGigante {
-    width: 250px;
+.textoprincipal p {
+    color: var(--corSecundaria);
+}
+
+.textoprincipal a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.textoprincipal a:hover {
+    background-color: var(--corSecundaria);
+}
+
+#sorveteGigante {
+    width: 350px;
+    height: 500px;
+    
 }
 
 .circuloVerde {
@@ -70,16 +114,19 @@ header a img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* background-color: blue; */
 }
 
 .icons-lateral {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    list-style-type: none;
 }
 
 .icons-lateral img {
     width: 20px
+
 }
 
 .sorvetes {
@@ -88,9 +135,35 @@ header a img {
     flex-direction: row;
     list-style-type: none;
     justify-content: center;
+    align-items: flex-end;
     gap: 30px;
+    height: 85px;
+}
+
+.sorvetes ul li {
+    position: relative;
 }
 
 .sorvetes img {
     width: 50px;
+}
+
+.face {
+    height: 25px;
+}
+
+.sorvetes li img {
+    padding-bottom: 0px;
+    transition: all 0.3s ease;
+}
+
+.sorvetes li img:hover {
+    padding-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
