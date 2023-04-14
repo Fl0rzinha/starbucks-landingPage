@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="assets/logo.png" alt="Logo"></a>
+
+
+        <!-- div para o menu hamburger (telas menores) -->
+        <div class="toggle" onclick="togglemenu()">
+            <a href="#"></a>
+        </div>
+
+        <!-- Menu (links) -->
+        <ul class="links">
+            <li><a href="https://www.starbucks.com.br/" target="_blank">Home</a></li>
+            <li><a href="https://www.starbucks.com.br/menu-list" target="_blank">Menu</a></li>
+            <li><a href="https://www.starbucks.com.br/responsabilidade" target="_blank">Novidades</a></li>
+            <li><a href="https://www.starbucks.com.br/lojas" target="_blank">Lojas</a></li>
+        </ul>
+    </header>
+
+
+    <main>
+        
+        <div class="circulo"></div>
+
+        <div class="conteudo">
+            <div class="textoprincipal">
+
+                <!-- Texto principal -->
+                <h2>Não é apenas um café é: <br><span>Starbucks</span></h2>
+
+                <!-- Texto secundário -->
+                <p>Descubra um mundo de sabores inesqueciveis com a Starbucks. Cada colherada é uma explosão de sabores
+                    irresistíveis que vão te conquistar!</p>
+
+                <!-- Botão -->
+                <a href="https://www.starbucks.com.br/" target="_blank">Veja mais</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="assets/img1.png" alt="img1" id="sorveteGigante">
+                <div class="circuloVerde">.</div>
+
+                <ul class="icons-lateral">
+                    <li><a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <ul class="sorvetes">
+            <li><img src="assets/thumb1.png" alt="Sorvete1" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="assets/thumb2.png" alt="Sorvete2" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" alt="Sorvete2" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

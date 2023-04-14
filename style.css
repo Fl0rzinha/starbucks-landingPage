@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    --corPrimaria: #017143;
+    --corSecundaria: #333;
+    --corTerciaria: #fff;
+}
+
+body {
+    background-color: var(--corTerciaria);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+header a img {
+    width: 80px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    
+}
+
+.textoprincipal{
+    width: 600px;
+}
+
+.textoprincipal h2 span {
+    color: var(--corPrimaria);
+}
+
+.sorveteGigante {
+    width: 250px;
+}
+
+.circuloVerde {
+    clip-path: circle(400px at center bottom);
+}
+
+.imgBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icons-lateral img {
+    width: 20px
+}
+
+.sorvetes {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sorvetes img {
+    width: 50px;
+}
