@@ -162,6 +162,10 @@ header ul li a {
     transition: all 0.3s ease;
 }
 
+.circulo {
+    
+}
+
 footer {
     bottom: 0;
     position: fixed;
