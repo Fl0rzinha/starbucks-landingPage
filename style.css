@@ -27,10 +27,6 @@ header {
     align-items: center;
 }
 
-main {
-    height: 100vh;
-}
-
 header a img {
     width: 80px;
     filter: invert(0.1);
@@ -68,6 +64,7 @@ header ul li a {
     padding-left: 80px;
     padding-right: 5px;
     align-items: center;
+    /* background-color: red; */
 }
 
 .textoprincipal{
@@ -118,53 +115,53 @@ header ul li a {
 }
 
 .icons-lateral {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    list-style-type: none;
 }
 
-.icons-lateral img {
-    width: 20px;
+.icons-lateral li {
+    list-style: none;
+}
+
+.icons-lateral li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
     filter: invert(1);
 }
 
-.icons-lateral img:hover {
+.icons-lateral li a:hover {
+    color: var(--corSecundaria);
     filter: invert(0);
 }
 
 .sorvetes {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 30px;
-    height: 85px;
 }
 
-.sorvetes ul li {
-    position: relative;
+.sorvetes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.sorvetes img {
-    width: 50px;
-}
-
-.face {
-    height: 20px;
-    width: 5px;
+.sorvetes li:hover {
+    transform: translateY(-15px);
 }
 
 .sorvetes li img {
-    padding-bottom: 0px;
-    transition: all 0.5s ease;
-}
-
-.sorvetes li img:hover {
-    padding-bottom: 25px;
-    transition: all 0.5s ease;
+    max-width: 60px;
 }
 
 .circulo {
@@ -211,7 +208,8 @@ footer {
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
-        filter: invert(1)
+        filter: invert(1);
+        z-index: 11;
     }
 
     .toggle.active {
@@ -229,6 +227,13 @@ footer {
         top: 0;
         left: 0;
         width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        z-index: 10;
     }
 
     header ul li a {
@@ -237,12 +242,12 @@ footer {
     }
 
     main {
-        padding: 20px 20px 120px;
+        /* padding: 20px 20px 120px; */
+        height: 100vh;
     }
 
     .conteudo {
         flex-direction: column;
-        margin-top: 100px;
     }
 
     .textoprincipal h2 {
@@ -258,11 +263,26 @@ footer {
         max-width: 300px;
     }
 
+    .sorvetes {
+        margin-top: 100px;
+    }
     .sorvetes li img{
         max-width: 40px;
     }
 
     .circulo {
         clip-path: circle(400px at center bottom);
+    }
+
+    .icons-lateral {
+        position: absolute;
+        background-color: var(--corPrimaria);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    #sorveteGigante {
+        width: 190px;
+        height: 340px;
     }
 }
