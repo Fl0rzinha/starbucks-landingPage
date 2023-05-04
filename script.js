@@ -1,5 +1,6 @@
-function imgSlider(anything) {
-    document.querySelector('#sorveteGigante').scr = anything;
+function mudarImagem(caminho) {
+    var imagem = document.getElementById("sorveteGigante");
+    imagem.src = caminho;
 }
 
 function changeCircleColor(color) {
