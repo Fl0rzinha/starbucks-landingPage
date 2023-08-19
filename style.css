@@ -22,8 +22,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
     align-items: center;
 }
 
@@ -45,6 +45,10 @@ header ul li a {
     list-style-type: none;
     gap: 35px;
     font-family: 'Poppins', sans-serif;
+    
+}
+
+.links a{
     color: var(--corSecundaria);
 }
 
@@ -121,6 +125,7 @@ header ul li a {
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -248,15 +253,31 @@ footer {
 
     .conteudo {
         flex-direction: column;
+        padding-left: 40px;
+        
     }
 
     .textoprincipal h2 {
-        font-size: 2.5em;
+        font-size: 2.0em;
         margin-bottom: 15px;
+        line-height: 35px;
     }
 
     .textoprincipal {
         max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .textoprincipal a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background-color: var(--corPrimaria);
+        color: var(--corTerciaria);
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
     }
 
     .imgBox {
@@ -282,7 +303,7 @@ footer {
     }
 
     #sorveteGigante {
-        width: 190px;
-        height: 340px;
+        width: 170px;
+        height: 300px;
     }
 }

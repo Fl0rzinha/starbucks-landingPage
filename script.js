@@ -3,9 +3,21 @@ function mudarImagem(caminho) {
     imagem.src = caminho;
 }
 
-function changeCircleColor(color) {
+function changeElementColors(color) {
+    // seta as variáveis
     const circulo = document.querySelector('.circulo')
+    const botaoVejaMais = document.getElementById("button-veja-mais")
+    const subtituloStarbucks = document.getElementById("starbucks-subtitle")
+
+    // muda as cores das variáveis
     circulo.style.background = color;
+    botaoVejaMais.style.backgroundColor = color;
+    subtituloStarbucks.style.color = color;
+}
+
+function mudarCorBotaoVejaMais(color) {
+    const botaoVejaMais = document.getElementById("button-veja-mais")
+    botaoVejaMais.style.backgroundColor = color;
 }
 
 function toggleMenu() {
